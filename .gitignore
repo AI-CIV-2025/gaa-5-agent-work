@@ -1,16 +1,10 @@
-# Ignore common build artifacts and temporary files
-/build/
-/dist/
+# Ignore common build artifacts and sensitive files
 *.log
-*.tmp
-*.swp
 *.bak
+*.tmp
 .DS_Store
 .env
-# Python
-__pycache__/
-*.pyc
-# Node.js
-node_modules/
-# Agent specific
-*.report
+credentials.json
+# Ignore specific data files that might be generated locally
+/data/*
+!/data/gaa-5-agent-work/
