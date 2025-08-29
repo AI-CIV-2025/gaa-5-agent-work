@@ -1,10 +1,38 @@
-# Ignore common build artifacts and sensitive files
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-store/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Logs
 *.log
-*.bak
-*.tmp
-.DS_Store
+
+# Environment variables
 .env
-credentials.json
-# Ignore specific data files that might be generated locally
-/data/*
-!/data/gaa-5-agent-work/
+.env.*
+
+# OS generated files
+.DS_Store
+.localized
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+
+# Build artifacts
+build/
+dist/
+
+# Temporary files
+*.tmp
+*~
+# Git specific credentials, if stored locally
+.git-credentials
