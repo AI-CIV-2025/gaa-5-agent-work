@@ -1,30 +1,35 @@
-# General operating system and editor files
-.DS_Store
-.env
-.vscode/
+# Logs and temporary files
+*.log
+*.tmp
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # Dependency directories
 node_modules/
-vendor/
+jspm_packages/
+web_modules/
 
-# Log files
-*.log
-npm-debug.log*
-yarn-debug.log*
-pnpm-debug.log*
-
-# Temporary files and build artifacts
-*.tmp
+# Operating System generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 *.bak
 *.swp
-*.swo
-*.out
-build/
-dist/
 
-# AI-specific outputs that should not be tracked
-*.analysis
-*.report
-*.summary
-*.reflection
-*_temp_output.*
+# Integrated Development Environment (IDE) files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Build artifacts and compiled output
+/build/
+/dist/
+
+# Agent-specific temporary files
+_temp_*.txt
