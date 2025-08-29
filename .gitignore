@@ -1,36 +1,26 @@
-# General ignores
+# General Ignored Files
 .DS_Store
 .env
-.venv
 *.log
 *.bak
 *.tmp
-*.swp
+
+# AI Specific / Environment Specific
+/data/
+/tmp/
+# Any local configuration or sensitive files
+config.json
+credentials.txt
+
+# Operating System Files
+.ipynb_checkpoints/
+
+# Python specific
+__pycache__/
 *.pyc
+.python-version
 
 # Node.js specific
 node_modules/
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
-
-# Python specific
-__pycache__/
-venv/
-
-# AI Agent specific output/data directories
-/data/
-/output/
-/logs/
-/tmp_artifacts/
-
-# Credentials and sensitive files
-*.pem
-*.key
-*.token
-*.secrets
-
-# OS generated files
-Thumbs.db
-.idea/
-.vscode/
