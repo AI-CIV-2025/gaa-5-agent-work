@@ -1,26 +1,27 @@
-# General Ignored Files
-.DS_Store
-.env
+# Logs
 *.log
-*.bak
+log/
+
+# Temporary files
 *.tmp
+*~
 
-# AI Specific / Environment Specific
-/data/
-/tmp/
-# Any local configuration or sensitive files
-config.json
-credentials.txt
+# Data files (can be large or sensitive)
+*.db
+*.json
+*.csv
 
-# Operating System Files
-.ipynb_checkpoints/
+# Environment variables
+.env
 
-# Python specific
-__pycache__/
-*.pyc
-.python-version
+# IDE/Editor specific files
+.idea/
+.vscode/
 
-# Node.js specific
-node_modules/
-npm-debug.log*
-yarn-debug.log*
+# System generated
+.DS_Store
+Thumbs.db
+
+# Agent-specific outputs that shouldn't be versioned
+*_report.md
+*_status.md
