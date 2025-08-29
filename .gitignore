@@ -1,39 +1,30 @@
-# Operating System Specific Files
+# General operating system and editor files
 .DS_Store
-Thumbs.db
-
-# Build Artifacts and Logs
-*.log
-*.bak
-*.tmp
-/build/
-/dist/
-
-# Sensitive Files (e.g., private keys) - Crucial for security
-id_rsa*
-
-# Python Specific
-__pycache__/
-*.pyc
-venv/
 .env
+.vscode/
 
-# Node.js Specific
+# Dependency directories
 node_modules/
+vendor/
+
+# Log files
+*.log
 npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
 
-# Data Directory (agent's local working data, generally not for commit)
-# Exclude everything in the top-level 'data' directory (EXECUTION_PATH)
-# except for a .gitkeep file if we want to ensure the directory itself is tracked.
-# Note: This .gitignore is *inside* the gaa-5-agent-work repo, so it refers
-# to files relative to that repo. The agent's global EXECUTION_PATH is './data'.
-# To ignore files created by the agent in its parent data directory, this .gitignore
-# needs to be carefully configured, or a global .gitignore used.
-# For now, this ignores files within the 'gaa-5-agent-work' folder.
+# Temporary files and build artifacts
+*.tmp
+*.bak
+*.swp
+*.swo
+*.out
+build/
+dist/
 
-# Agent specific state/marker files (if created inside the repo)
-.ssh_key_generated_and_agent_setup
-.git_repo_initialized
-.content_created
-.initial_commit_made
-.remote_pushed
+# AI-specific outputs that should not be tracked
+*.analysis
+*.report
+*.summary
+*.reflection
+*_temp_output.*
