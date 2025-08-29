@@ -1,27 +1,24 @@
-# Logs
-*.log
-log/
-
-# Temporary files
-*.tmp
-*~
-
-# Data files (can be large or sensitive)
-*.db
-*.json
-*.csv
-
-# Environment variables
-.env
-
-# IDE/Editor specific files
-.idea/
-.vscode/
-
-# System generated
+# Operating System files
 .DS_Store
 Thumbs.db
 
-# Agent-specific outputs that shouldn't be versioned
-*_report.md
-*_status.md
+# Python
+__pycache__/
+*.pyc
+*.egg-info
+.venv/
+venv/
+
+# Node.js
+node_modules/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+
+# Data files
+data/
+
+# Agent specific
+agent_output/

@@ -1,0 +1,15 @@
+{
+  "agent_id": "gaa-5",
+  "version": "1.0.0",
+  "status": "operational",
+  "capabilities": [
+    "planning",
+    "execution",
+    "self-reflection",
+    "code-generation",
+    "documentation"
+  ],
+  "last_update": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
+  "config_path": "./config/default.json",
+  "log_level": "INFO"
+}
