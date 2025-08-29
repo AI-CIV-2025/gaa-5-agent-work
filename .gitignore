@@ -1,0 +1,8 @@
+# Ignore common temporary files and logs
+*.log
+*.tmp
+*.swp
+*.bak
+
+# Ignore agent-specific temporary data or sensitive files
+/data/
